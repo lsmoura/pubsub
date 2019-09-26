@@ -1,0 +1,21 @@
+{
+  "name": "@lsmoura/pubsub",
+  "version": "1.0.0",
+  "description": "javascript pubsub library",
+  "main": "src/index.js",
+  "author": "Sergio Moura",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha __test__/",
+    "coverage": "nyc --reporter=text mocha __test__"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "eslint": "^6.4.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2"
+  }
+}

@@ -1,0 +1,16 @@
+parser: babel-eslint
+
+env:
+  es6: true
+  node: true
+
+parserOptions:
+  ecmaVersion: 2017                   # Validate ECMAScript 2016 features
+  sourceType: module                  # Allow ECMAScript modules
+
+rules:
+  semi: error
+  no-undef: error
+  indent:
+    - error
+    - 2
