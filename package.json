@@ -2,20 +2,35 @@
   "name": "@lsmoura/pubsub",
   "version": "1.0.0",
   "description": "javascript pubsub library",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "author": "Sergio Moura",
   "license": "MIT",
   "scripts": {
+    "build": "rollup --config",
     "test": "mocha __test__/",
     "coverage": "nyc --reporter=text mocha __test__"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
     "eslint": "^6.4.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.3"
+  },
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
