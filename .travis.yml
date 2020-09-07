@@ -1,8 +1,9 @@
 language: node_js
 
 node_js:
-  - 12
+  - 14
 
 script:
-  - yarn eslint src/
-  - yarn coverage
+  - npm i -g pnpm
+  - pnpm run lint
+  - pnpm run coverage
