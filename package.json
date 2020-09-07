@@ -12,6 +12,9 @@
     "test": "mocha __test__/"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
@@ -23,17 +26,12 @@
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
     "rollup": "^1.21.4",
-    "rollup-plugin-uglify": "^6.0.3"
+    "rollup-plugin-uglify": "^6.0.4"
   },
   "files": [
     "lib/"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  },
-  "dependencies": {
-    "@rollup/plugin-babel": "^5.2.0",
-    "@rollup/plugin-commonjs": "^15.0.0",
-    "@rollup/plugin-node-resolve": "^9.0.0"
   }
 }
